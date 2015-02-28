@@ -4,13 +4,13 @@
     <title>Registration Page</title>
 </head>
 <body>
-    <form id="registration">
+    <form id="registration" action="register.php" method="post">
         <input type="text" name="user-name" id="user-name" placeholder="user name" required>
         <input type="email" name="email" id="email" placeholder="email address" required>
         <input type="text" name="firstname" id="firstname" placeholder="first name" required>
-        <input type="text" name="lastname" id="lastname" placeholder="lastname" required>
+        <input type="text" name="lastname" id="lastname" placeholder="last name" required>
         <input type="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" name="password" id="password" placeholder="Upper/Lower/Number/SpecialChar and min 8 Chars" required>
-        <input type="submit" value="Submit" formaction="register.php">
+        <input type="submit" value="Submit" >
     </form>
 
 </body>
